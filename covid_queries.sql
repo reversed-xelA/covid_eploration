@@ -43,11 +43,12 @@ order by 1,2
 
 Select 
 	location, 
+	population,
+	date,
 	MAX(total_cases) as highest_infection_count, 
-	population,  
 	(MAX(CAST (total_cases AS FLOAT))/population)*100 AS population_infected_percent
 From covid_deaths
-Group by location, population
+Group by location, population, date
 order by population_infected_percent desc
 
 
@@ -114,6 +115,15 @@ SELECT
 FROM covid_deaths
 WHERE continent IS NOT NULL
 ORDER BY 1,2
+
+-- Getting a death count by continent and exluding those continents labeled as World, international and European Union (Europe exists as a label)
+
+SELECT location, SUM(new_deaths) as total_deaths
+FROM covid_deaths
+WHERE continent is null
+and location not in ('World', 'European Union', 'International', 'High income', 'Upper middle income', 'Lower middle income', 'Low income')
+GROUP BY location
+ORDER BY total_deaths desc
 
 
 -- Looking at total population vs vaccinations
