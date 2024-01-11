@@ -1,4 +1,4 @@
-# Covid data SQL exploration and Tableau Viz
+# Covid data SQL exploration and Tableau Dashboard
 ## Project Overview
 * Wrote a SQL script to analyse COVID-19 infection and death rates across geographical regions.
 * Composed a Tableau dashboard to effectively display the data through various displays including table, map, bar graph and line graph formats.
