@@ -7,7 +7,7 @@
 https://public.tableau.com/views/CovidDashboard_17028579357660/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
 
 ## Resources
-***SQL Server:*** Microsoft SQL Server 16
+***SQL Server:*** Microsoft SQL Server 16  
 ***Our World in Data Covid Data Set:*** https://ourworldindata.org/covid-deaths
 
 ## Exploratory data analysis highlights
